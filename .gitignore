@@ -1,0 +1,30 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+
+# Environment secrets
+.env
+.env.local
+backend/.env
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Backups and temporary files
+*.bak
+/evaluations.db
+evaluations.db.bak
+.admin_initial_credentials
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Vercel build output
+.vercel/

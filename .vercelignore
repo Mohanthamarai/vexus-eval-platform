@@ -1,0 +1,11 @@
+.venv
+.vscode
+__pycache__
+*.pyc
+*.bak
+*.pdf
+*.docx
+*.pptx
+extracted_ppt_images
+evaluations.db.bak
+.git

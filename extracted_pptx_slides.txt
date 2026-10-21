@@ -1,0 +1,188 @@
+=== SLIDE 1 ===
+EvalTutor – AI-Powered Multilingual Tutoring Evaluation Platform
+B.Tech Final Year Project Presentation | Academic Year 2025–2026
+Student Details
+Student Name: [MOHAN T]
+Register Number: [710024243701]
+Department: [B.tech- AI & DS]
+Institutional Details
+College Name: [ANNA UNIVERSITY REGIONAL CAMPUS]
+Guide: [Dr.Marikannu]
+Academic Year: 2025–2026
+
+=== SLIDE 2 ===
+The Problem: AI Tutors Are Unmonitored & Unreliable
+AI tutors now serve millions of students globally — yet there is zero pedagogical oversight on the content they generate. The consequences are serious and growing.
+🚀 Explosive AI Adoption
+AI tutors serve millions of students globally, yet response quality remains entirely unchecked and unmonitored.
+🧠 Hallucinations Are Rampant
+LLMs confidently generate incorrect facts, misleading students during critical learning phases with no warning.
+⚠️ Dangerous Dependency
+Students copy AI answers without understanding — directly undermining conceptual learning and critical thinking.
+🌐 Language Barrier
+Most AI tutors operate only in English, excluding 1.5 billion+ regional-language learners worldwide.
+🔍 No Evaluation Layer
+There is currently zero pedagogical oversight or quality scoring on AI-generated tutoring content.
+✅ EvalTutor Fills the Gap
+A real-time evaluation platform that monitors, scores, and continuously improves AI tutoring quality.
+
+=== SLIDE 3 ===
+Objectives
+EvalTutor is designed around five core objectives that together create a comprehensive, trustworthy AI tutoring ecosystem.
+Monitor AI Quality
+Score every AI response for pedagogical accuracy, clarity, and educational value on a 0–100 scale.
+Detect Hallucinations
+Flag responses with high hallucination risk before students act on potentially incorrect information.
+Measure Dependency
+Track over-reliance on AI answers versus independent reasoning to promote genuine learning.
+Multilingual Support
+Enable seamless tutoring in regional languages via automatic language detection and translation.
+Analytics Dashboard
+Provide students and educators with real-time learning insights, progress metrics, and weak topic identification.
+
+=== SLIDE 4 ===
+How EvalTutor Works: End-to-End Workflow
+A seamless 7-step pipeline transforms a student's question — in any language — into an evaluated, scored, and translated AI tutoring response delivered in real time.
+Student Input
+Student submits question in any language
+Language Detect
+Auto-detects input language (langdetect)
+Translate to English
+Translate source to English (googletrans)
+AI Tutoring
+Groq Llama-3.3-70B generates response
+Each step is automated and executes in milliseconds — the student experiences a seamless, real-time tutoring interaction while the evaluation engine works silently in the background to score every response.
+
+=== SLIDE 5 ===
+System Architecture
+EvalTutor's architecture is modular and layered — each component is independently scalable and communicates through a FastAPI orchestration backbone.
+Core Processing Modules
+Langdetect: Identifies input language in milliseconds
+Googletrans: Bridges regional languages ↔ English
+Groq Llama-3.3-70B: Generates pedagogically structured responses
+Evaluation & Output Layer
+Evaluation Engine: Scores quality, detects hallucinations, measures dependency
+Dashboard: Chart.js-powered real-time analytics
+FastAPI: Handles all routing and session management
+
+=== SLIDE 6 ===
+Technologies Used
+EvalTutor is built on a modern, lightweight, and high-performance technology stack — each layer chosen for speed, accuracy, and developer productivity.
+Layer
+Technology
+Frontend
+HTML, CSS, JavaScript
+Backend
+FastAPI, Python
+AI Model
+Groq Llama-3.3-70B-Versatile
+Translation
+Googletrans, Langdetect
+Charts
+Chart.js
+Prompt Engineering
+Structured JSON & Markdown
+Ultra-Fast Inference
+Groq's hardware-accelerated API delivers AI responses in milliseconds — enabling truly real-time tutoring interactions.
+Python-First Stack
+FastAPI and Python provide a clean, async-ready backend that integrates seamlessly with all AI and translation modules.
+Live Visualization
+Chart.js renders dynamic, real-time analytics charts on the student dashboard after every single interaction.
+
+=== SLIDE 7 ===
+Key Features
+Seven tightly integrated features make EvalTutor a complete, end-to-end AI tutoring quality platform — not just a chatbot wrapper.
+⚡ Live AI Chat
+Real-time tutoring powered by Groq's ultra-fast inference API with structured educational responses.
+🌐 Multilingual Support
+Auto-detects and responds in the student's native language — inclusive for 1.5B+ regional learners.
+📊 Pedagogical Evaluation
+Every response scored against educational quality standards on a 0–100 scale in real time.
+🚨 Hallucination Detection
+Flags factually risky AI responses (Low / Medium / High) before they mislead students.
+🔗 Dependency Tracking
+Monitors how often students rely on AI versus thinking independently — promoting genuine learning.
+📈 Student Dashboard
+Personalized view of quality scores, weak topics, and learning progress over time.
+🔄 Real-Time Analytics
+Live charts and metrics updated after every single interaction using Chart.js visualizations.
+
+=== SLIDE 8 ===
+Working Methodology: 10-Step Process
+From question submission to dashboard update — EvalTutor's complete processing pipeline executes automatically in under two seconds per interaction.
+01
+Student Submits Question
+Student types a question in any language via the chat interface.
+02
+Language Identification
+Langdetect identifies the input language automatically.
+03
+Query Translation
+Googletrans translates the query to English for AI processing.
+04
+AI Response Generation
+Groq Llama-3.3 generates a structured, pedagogically sound AI response.
+05
+Response Translation Back
+Response is translated back to the student's native language.
+06
+Evaluation Engine Analysis
+Evaluation Engine analyzes response quality across multiple dimensions.
+07
+Quality Score Calculated
+Quality Score is computed on a 0–100 scale using a multi-dimensional rubric.
+08
+Hallucination Risk Flagged
+Hallucination Risk is classified as Low, Medium, or High per response.
+09
+Dependency Level Logged
+Dependency Level is measured and recorded for the session.
+10
+Dashboard Updated
+All metrics are pushed to the student dashboard in real time via Chart.js.
+
+=== SLIDE 9 ===
+Results & Dashboard Insights
+Across 10 sessions, EvalTutor demonstrates a clear and consistent improvement in AI tutoring quality — with Quality Scores rising from 62 → 91 and Hallucination Risk dropping from 38% → 8% as students engage more deeply with the platform.
+91
+Peak Quality Score
+Achieved by Session 10 on the 0–100 pedagogical accuracy scale.
+8%
+Hallucination Risk
+Reduced from 38% at Session 1 — a 79% reduction in risk.
+3
+Evaluation Dimensions
+Quality Score, Hallucination Risk, and Dependency Level tracked per response.
+
+=== SLIDE 10 ===
+Challenges Faced & Solutions Implemented
+Four significant engineering challenges were encountered and resolved during development — each solution strengthening the platform's robustness and accuracy.
+Challenge
+Solution Implemented
+Groq model deprecation mid-development
+Migrated to Llama-3.3-70B-Versatile — faster and more accurate than the deprecated model
+Translation accuracy for technical terms
+English-first middleware layer with context-aware prompts to preserve technical terminology
+Poor AI response formatting
+Prompt engineering with structured Markdown and JSON output templates for consistent formatting
+Measuring educational quality objectively
+AI-based evaluation engine with a multi-dimensional scoring rubric covering accuracy, clarity, and depth
+Each challenge encountered during development directly informed a stronger, more production-ready architecture — making EvalTutor more resilient and accurate than originally designed.
+
+=== SLIDE 11 ===
+Advantages & Future Scope
+✅ Current Advantages
+Improves AI tutoring quality with real-time evaluation after every response
+Detects and flags hallucinations before they mislead students
+Encourages conceptual learning over answer copying
+Reduces unhealthy student dependency on AI
+Supports regional languages — inclusive for all learners
+Provides actionable learning analytics for educators
+🚀 Future Scope
+Voice-Based Tutoring — Speech-to-text integration for hands-free learning
+OCR Support — Handwritten question input via optical character recognition
+Mobile Application — Native iOS & Android apps for on-the-go learning
+LMS Integration — Moodle and Google Classroom compatibility
+Personalized AI Paths — Adaptive learning journeys per student profile
+Offline Multilingual Models — Low-connectivity region support
+

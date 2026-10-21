@@ -1,0 +1,145 @@
+{
+  "subjects": {
+    "mathematics": {
+      "facts": [
+        "Pi is approximately 3.14159",
+        "A triangle has three sides",
+        "The sum of angles in a triangle is 180 degrees",
+        "A circle has 360 degrees",
+        "Zero is neither positive nor negative",
+        "The square root of 2 is irrational, approximately 1.414",
+        "A prime number is divisible only by 1 and itself",
+        "The Fibonacci sequence starts with 0, 1, 1, 2, 3, 5, 8, 13",
+        "Parallel lines never intersect",
+        "The circumference of a circle is 2 times pi times radius",
+        "An equilateral triangle has all sides equal",
+        "The area of a square is side squared"
+      ],
+      "formulas": [
+        "a² + b² = c²",
+        "area = π × r²",
+        "circumference = 2πr",
+        "area of triangle = ½ × base × height",
+        "area of rectangle = length × width",
+        "volume of sphere = (4/3)πr³",
+        "volume of cylinder = πr²h",
+        "slope = (y2 - y1) / (x2 - x1)",
+        "quadratic formula: x = (-b ± √(b²-4ac)) / 2a",
+        "distance = √((x2-x1)² + (y2-y1)²)",
+        "surface area of cube = 6s²",
+        "perimeter of rectangle = 2(l + w)"
+      ]
+    },
+    "science": {
+      "facts": [
+        "Water boils at 100 degrees Celsius at sea level",
+        "The speed of light is approximately 299792458 meters per second",
+        "DNA stands for deoxyribonucleic acid",
+        "The Earth orbits the Sun in approximately 365.25 days",
+        "Photosynthesis converts carbon dioxide and water into glucose and oxygen",
+        "The human body has 206 bones",
+        "Mitochondria are the powerhouse of the cell",
+        "Newton's first law states an object at rest stays at rest unless acted upon by a force",
+        "The periodic table has 118 confirmed elements",
+        "Sound travels at approximately 343 meters per second in air",
+        "The Earth's atmosphere is approximately 78 percent nitrogen",
+        "An atom consists of protons, neutrons, and electrons"
+      ],
+      "formulas": [
+        "E = mc²",
+        "F = ma",
+        "v = d/t",
+        "KE = ½mv²",
+        "PE = mgh",
+        "P = W/t",
+        "Ohm's law: V = IR",
+        "density = mass/volume",
+        "acceleration = (v₂ - v₁) / t",
+        "wave speed = frequency × wavelength",
+        "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂",
+        "F = G(m₁m₂)/r²"
+      ]
+    },
+    "history": {
+      "facts": [
+        "World War I lasted from 1914 to 1918",
+        "World War II lasted from 1939 to 1945",
+        "The Declaration of Independence was signed in 1776",
+        "The French Revolution began in 1789",
+        "The Renaissance began in Italy in the 14th century",
+        "The Industrial Revolution started in Britain in the late 18th century",
+        "Abraham Lincoln was the 16th President of the United States",
+        "The Berlin Wall fell in 1989",
+        "The Roman Empire fell in 476 AD",
+        "The Magna Carta was signed in 1215",
+        "The American Civil War lasted from 1861 to 1865",
+        "Christopher Columbus reached the Americas in 1492",
+        "The printing press was invented by Gutenberg around 1440",
+        "The Cold War lasted approximately from 1947 to 1991"
+      ],
+      "key_dates": {
+        "1215": "Magna Carta signed",
+        "1440": "Gutenberg invents the printing press",
+        "1492": "Columbus reaches the Americas",
+        "1776": "American Declaration of Independence",
+        "1789": "French Revolution begins",
+        "1861-1865": "American Civil War",
+        "1914-1918": "World War I",
+        "1939-1945": "World War II",
+        "1969": "Apollo 11 Moon landing",
+        "1989": "Fall of the Berlin Wall",
+        "1991": "Dissolution of the Soviet Union"
+      }
+    },
+    "english_literature": {
+      "facts": [
+        "William Shakespeare was born in 1564 and died in 1616",
+        "Shakespeare wrote approximately 37 plays and 154 sonnets",
+        "Romeo and Juliet is a tragedy by William Shakespeare",
+        "To Kill a Mockingbird was written by Harper Lee in 1960",
+        "A metaphor directly compares two unlike things without using like or as",
+        "A simile compares two things using like or as",
+        "Alliteration is the repetition of initial consonant sounds",
+        "An allegory is a narrative with a hidden meaning",
+        "The protagonist is the main character of a story",
+        "Iambic pentameter consists of five pairs of unstressed and stressed syllables",
+        "1984 was written by George Orwell",
+        "The Great Gatsby was written by F. Scott Fitzgerald"
+      ],
+      "literary_works": [
+        "Romeo and Juliet by William Shakespeare",
+        "Hamlet by William Shakespeare",
+        "To Kill a Mockingbird by Harper Lee",
+        "1984 by George Orwell",
+        "Animal Farm by George Orwell",
+        "The Great Gatsby by F. Scott Fitzgerald",
+        "Pride and Prejudice by Jane Austen",
+        "Lord of the Flies by William Golding",
+        "The Catcher in the Rye by J.D. Salinger",
+        "Of Mice and Men by John Steinbeck"
+      ]
+    },
+    "geography": {
+      "facts": [
+        "The Earth has seven continents",
+        "Mount Everest is the tallest mountain above sea level at 8849 meters",
+        "The Pacific Ocean is the largest ocean",
+        "The Sahara is the largest hot desert in the world",
+        "The Amazon River is the largest river by volume",
+        "The Nile River is traditionally considered the longest river at approximately 6650 kilometers",
+        "There are approximately 195 countries in the world",
+        "The Earth's core temperature is estimated at about 5400 degrees Celsius",
+        "Tectonic plates move approximately 2 to 10 centimeters per year",
+        "The atmosphere is composed of approximately 78 percent nitrogen and 21 percent oxygen",
+        "The Mariana Trench is the deepest point in the ocean at about 11034 meters",
+        "The Ring of Fire is a zone of frequent earthquakes around the Pacific Ocean"
+      ],
+      "key_features": {
+        "continents": ["Africa", "Antarctica", "Asia", "Australia", "Europe", "North America", "South America"],
+        "oceans": ["Pacific", "Atlantic", "Indian", "Southern", "Arctic"],
+        "longest_rivers": ["Nile", "Amazon", "Yangtze", "Mississippi", "Yenisei"],
+        "highest_mountains": ["Everest", "K2", "Kangchenjunga", "Lhotse", "Makalu"]
+      }
+    }
+  }
+}

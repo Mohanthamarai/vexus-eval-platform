@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+python-dotenv
+wikipedia
+deep-translator
+langdetect
+groq
+bcrypt
+passlib
+requests
+psycopg2-binary

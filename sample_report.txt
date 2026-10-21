@@ -1,0 +1,641 @@
+CHAPTER 1 
+INTRODUCTION
+
+		Brain O Vision Solutions India Pvt. Ltd. is a technology-driven organization specializing in Artificial Intelligence, Machine Learning, Generative AI, and software development. During my internship as an AI & Generative AI Intern, I worked on 
+a healthcare project titled “MediSafe AI – Intelligent Medication Safety Assistant”. 
+This project provided me with an opportunity to apply Artificial Intelligence techniques to solve real-world challenges in the healthcare domain.
+
+		The primary objective of the project was to develop an intelligent web-based application that assists healthcare professionals in improving medication safety. The system is designed to analyze patient prescriptions, medical reports, laboratory reports, allergies, and medication history to identify potential risks such as drug-drug interactions, duplicate therapies, allergy conflicts, contraindications, and dosage-related issues. By using 
+AI-powered analysis, the application helps doctors and pharmacists make safer and more informed prescribing decisions.
+
+		To achieve these objectives, the application includes several modules such as secure user authentication, patient management, medical report upload, OCR-based text extraction, AI-powered medication analysis, drug interaction detection, allergy checking, duplicate therapy identification, clinical recommendation generation, medication risk scoring, and report generation. These modules work together to provide an efficient Clinical Decision Support System (CDSS) that enhances patient safety and reduces medication errors.
+		The project was developed using React.js, FastAPI, Python, PostgreSQL, Supabase, LangChain, ChromaDB, OCR, and Large Language Models (LLMs). Throughout the project development, I actively participated in system design, frontend and backend development, AI integration, database management, testing, debugging, and application deployment. 
+		Overall, this internship significantly improved my knowledge of Artificial Intelligence, Generative AI, Prompt Engineering, Retrieval-Augmented Generation (RAG), OCR, Full Stack Development, and cloud-based application development. The experience provided practical exposure to the complete software development lifecycle, from requirement analysis and system design to implementation, testing, and deployment. It strengthened both my technical and professional skills and prepared me for future opportunities in the fields of Artificial Intelligence, Machine Learning, and Healthcare Informatics.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CHAPTER 2 
+CERTIFICATES
+	
+			The following section presents the official documents provided by Brain O Vision Solutions India Pvt. Ltd., Hyderabad, Telangana, as evidence of the successful completion of my internship program held from 2th June 2026 to 30th July 2026. These documents formally acknowledge my selection, active involvement, regular attendance, and overall performance during the training period.	
+
+The documents enclosed are:
+
+Internship Acceptance Letter.
+
+Internship Attendance Sheet.
+
+Internship Completion Certificate.
+
+
+
+
+
+
+
+
+
+CHAPTER 3
+COMPANY PROFILE
+
+COMPANY OVERVIEW
+		Brain O Vision Solutions India Pvt. Ltd. was established with the objective of developing skilled professionals who are ready to meet the growing demands of the IT industry. The company provides high-quality technical education and develops innovative software solutions for various domains including healthcare, education, finance, automation, and business intelligence.
+		The company offers both offline and online internship programs that help students understand industrial workflows and software development practices. During these internships, students work on real-world problems and develop practical solutions using modern technologies under the guidance of experienced mentors.
+		Brain O Vision follows a project-based learning methodology where every student is encouraged to apply theoretical concepts to solve real-world challenges. This approach improves technical knowledge, problem-solving ability, teamwork, communication skills, and confidence.
+
+VISION
+		The vision of Brain O Vision Solutions India Pvt. Ltd. is to become one of the leading technology education and software development organizations by promoting innovation, practical learning, and technical excellence.
+		The company aims to empower students and professionals with the latest technological skills required to build successful careers in the software industry and contribute to the development of society through innovation and research.
+
+
+
+
+MISSION
+		To provide high-quality technology solutions through innovation, technical expertise, and customer-focused services. Skylena aims to help organizations leverage software development, cloud computing, cybersecurity, and artificial intelligence technologies to solve complex business challenges and accelerate digital transformation.
+
+SERVICES OFFERED
+		Brain O Vision Solutions India Pvt. Ltd. provides a wide range of technology services, software development solutions, and professional training programs. The major services offered by the company are:
+
+3.2.1 Artificial Intelligence & Generative AI
+Machine Learning Model Development
+Large Language Model (LLM) Applications
+Small Language Models (SLMs)
+Prompt Engineering
+Context Engineering
+Retrieval-Augmented Generation (RAG)
+AI Chatbot Development
+Natural Language Processing (NLP)
+
+3.2.2 Software Development
+Web Application Development
+Full Stack Development
+Mobile Application Development
+REST API Development
+Database Design and Management
+Enterprise Software Solutions
+Cloud-Based Application
+
+Data Science & Analytics
+Data Analysis
+Data Visualization
+Predictive Analytics
+Business Intelligence
+Data Mining
+Statistical Analysis
+Machine Learning Algorithms
+
+3.2.4 Cloud Computing
+Cloud Application Development
+Cloud Deployment
+AWS Cloud Services
+Microsoft Azure
+Google Cloud Platform (GCP)
+Docker Containerization
+Cloud Infrastructure Management
+
+3.2.5 Industrial Internship & Training Programs
+Artificial Intelligence Internship
+Machine Learning Training
+Generative AI Programs
+Full Stack Development Training
+Cloud Computing Internship
+Real-Time Project Development
+Technical Mentoring
+Performance Evaluation
+
+
+
+CORE VALUES
+		Brain O Vision follows several important values that guide its training and
+development activities.
+Innovation
+Practical Learning
+Professional Ethics
+Teamwork
+Continuous Improvement
+Student-Centered Learning 
+Excellence in Education
+Quality and Integrity
+Industry Collaboration
+Lifelong Learning
+
+		These values help students become technically skilled as well as professionally responsible.
+
+HANDS-ON TRAINING
+		The internship program at Brain O Vision Solutions India Pvt. Ltd. focuses on practical learning through hands-on project development. Students are encouraged to implement theoretical concepts by working on real-world AI applications under the guidance of experienced mentors. The training methodology includes live coding sessions, project-based learning, technical discussions, code reviews, and continuous evaluation, enabling interns to develop strong programming, analytical, and problem-solving skills.
+
+
+
+
+
+
+INDUSTRY-ALIGNED CURRICULUM
+		The internship curriculum is designed according to current industry standards and emerging technology trends. The program covers modern topics such as Artificial Intelligence, Machine Learning, Natural Language Processing, Large Language Models (LLMs), Small Language Models (SLMs), Prompt Engineering, Retrieval-Augmented Generation (RAG), Evaluation Metrics, Inference Engineering, API Integration, and Full Stack AI Application Development.
+		The curriculum combines theoretical concepts with practical implementation through mini-projects and a final capstone project, ensuring that students gain industry-relevant technical skills and are well prepared for careers in Artificial Intelligence and software engineering.
+
+
+CHAPTER 4
+PROJECT DESCRIPTION
+
+Project Title: 
+MEDISAFE AI
+(INTELLIGENT MEDICATION SAFETY ASSISTANT USING ARTIFICIAL INTELLIGENCE)
+
+4.1 Problem Statement:
+		Medication errors are one of the leading causes of preventable patient harm in hospitals worldwide. Physicians prescribe multiple medications based on the patient's disease, age, laboratory values, allergies, and medical history. However, manually reviewing all this information can be difficult and time-consuming. Some common medication-related problems include:
+Drug-drug interactions
+Duplicate medications
+Allergy conflicts
+Wrong dosage
+Renal dosage errors
+Contraindications
+Prescription mistakes
+
+		Existing systems provide only basic interaction checking and often fail to analyze the patient's complete medical condition.
+		Therefore, an intelligent AI-powered system is required to automatically analyze prescriptions, laboratory reports, allergies, and patient history to provide safe medication recommendations.
+4.2 Objective:
+The primary objectives of MediSafe AI are as follows:
+Improve Medication Safety
+	To analyze patient prescriptions and medical records to identify potential medication risks before medicines are prescribed.
+Detect Medication Errors
+	To automatically detect drug interactions, duplicate therapies, allergy conflicts, contraindications, and dosage-related issues using Artificial Intelligence.
+AI-Based Clinical Decision Support
+	To provide healthcare professionals with intelligent recommendations that support safe and effective medication management.
+Medical Report Analysis
+	To extract and analyze information from uploaded prescriptions and laboratory reports using OCR and Artificial Intelligence.
+Intelligent Report Generation
+	To generate comprehensive medication safety reports that summarize identified risks and AI-generated recommendations.
+
+ Project Overview
+		MediSafe AI is an AI-powered web application developed to improve medication safety in hospitals, clinics, pharmacies, and healthcare organizations. The application allows doctors and healthcare professionals to upload patient prescriptions, laboratory reports, and medical records for intelligent analysis.
+		The system uses Optical Character Recognition (OCR) to extract medical information from uploaded documents. Artificial Intelligence then analyzes patient history, allergies, diseases, medications, laboratory values, and prescriptions to identify medication-related risks. The application detects drug interactions, duplicate medications, contraindications, renal dosage issues, and allergy conflicts before generating clinical recommendations.
+		
+		The project combines Artificial Intelligence, Prompt Engineering, Retrieval-Augmented Generation (RAG), and Large Language Models (LLMs) to build a Clinical Decision Support System (CDSS) that improves patient safety and supports healthcare professionals in making informed prescribing decisions.
+
+4.4 Technologies Used 
+Frontend
+React.js
+TypeScript
+Tailwind CSS
+Backend
+FastAPI
+Python
+Database
+PostgreSQL
+Supabase
+Artificial Intelligence
+OpenAI / Gemini API
+Prompt Engineering
+Authentication
+Supabase Authentication
+Storage
+Supabase Storage
+Development Tools
+Visual Studio Code
+GitHub
+
+Key Features
+
+Patient Management 
+	Allows healthcare professionals to securely register, manage patient records, and maintain medical history in a centralized database.
+Medical Report Upload 
+	Enables users to upload prescriptions, laboratory reports, discharge summaries, and other medical documents for AI analysis.
+AI Medication Analysis 
+	Uses Artificial Intelligence to analyze patient reports, identify diseases, medications, allergies, and laboratory findings.
+Drug Interaction Detection 
+	Automatically detects dangerous interactions between prescribed medications and alerts healthcare professionals.
+Duplicate Therapy Detection 
+	Identifies duplicate medications prescribed from the same therapeutic class to avoid unnecessary drug administration.
+Allergy Conflict Detection 
+	Checks patient allergy history against prescribed medications and warns users about possible allergic reactions.
+Dosage Recommendation 
+	Evaluates dosage safety based on patient age, laboratory reports, and kidney function to reduce medication errors.
+Medication Risk Score 
+	Calculates an overall medication safety score indicating the severity of potential risks identified during analysis.
+AI Clinical Recommendation 
+	Provides AI-generated suggestions, precautions, and safer alternatives to assist doctors in clinical decision-making.
+
+Medication Safety Report 
+	Generates comprehensive medication safety reports in PDF format for documentation and future reference.
+Secure Authentication 
+	Provides secure login and role-based access to ensure patient information remains protected.
+
+System Requirements
+
+Hardware Requirements
+	Server: Multi-core processor, 8 GB RAM (16 GB recommended), SSD storage. 
+	Client: Desktop/Laptop with a modern web browser, minimum 4 GB RAM, and a 			stable internet connection.
+
+Software Requirements
+Operating System: Windows, Linux, or macOS
+Programming Languages: Python, TypeScript, JavaScript
+Frontend Framework: React.js
+Backend Framework: FastAPI
+Database: PostgreSQL, Supabase
+Authentication: Supabase Authentication
+Storage: Supabase Storage
+Artificial Intelligence: OpenAI API / Google Gemini API
+AI Framework: LangChain
+Vector Database: ChromaDB
+OCR Engine: PaddleOCR / Tesseract OCR
+Development Tools: Visual Studio Code, Git, GitHub, Postman
+Deployment Platform: Vercel (Frontend), Railway (Backend), Supabase Cloud
+
+3. Network Requirements
+Stable internet connection.
+Secure communication using HTTPS.
+Internet access for Supabase services.
+Internet access for OpenAI API or Google Gemini API.
+Internet access for OCR processing (if cloud-based).
+Reliable network connectivity for cloud deployment and API communication.
+
+System Design
+		The system architecture of MediSafe AI is designed as a secure AI-powered healthcare platform that integrates Artificial Intelligence, OCR, cloud databases, and clinical decision support.
+
+Conceptual Design
+			Healthcare professionals securely log into the application and upload patient prescriptions or laboratory reports. OCR extracts medical information, and the AI engine analyzes medications, diseases, allergies, and laboratory values. The system then generates medication safety alerts and AI-powered recommendations before producing a detailed medication safety report.
+
+Logical Design
+The system consists of several functional modules:
+User Authentication
+Patient Management
+Medical Report Upload
+OCR Processing
+AI Medication Analysis
+Drug Interaction Detection
+Allergy Checking
+Dosage Evaluation
+Clinical Recommendation
+Report Generation
+Dashboard
+		Each module communicates with the database and AI services to ensure smooth workflow and accurate clinical analysis.
+
+Physical Design
+		The application is developed using React.js and FastAPI. Patient information is securely stored in Supabase PostgreSQL, while uploaded reports are stored in Supabase Storage.
+		OCR extracts medical text, and AI services process the extracted information to generate medication safety recommendations. The system is deployed on cloud platforms to ensure accessibility, scalability, and security.
+
+Module Description
+ 
+User Authentication Module
+Provides secure user registration and login.
+Supports role-based access for healthcare professionals.
+Protects patient information using authentication and authorization.
+
+Patient Management Module
+Stores patient demographic information.
+Maintains medical history and allergy d1e4tails.
+Allows secure retrieval of patient records.
+
+Medical Report Upload Module
+Upload prescriptions and laboratory reports.
+Supports PDF and image formats.
+Stores reports securely for analysis.
+
+
+OCR Processing Module
+Extracts text from uploaded medical documents.
+Converts unstructured reports into structured medical information.
+Improves AI analysis accuracy.
+
+AI Medication Analysis Module
+Identifies medications and diseases.
+Detects drug interactions.
+Detects duplicate therapies.
+Checks allergy conflicts.
+Evaluates dosage safety.
+
+Clinical Recommendation Module
+Generates AI-based medication recommendations.
+Suggests precautions and safer alternatives.
+Assists healthcare professionals during prescribing.
+
+Medication Safety Report Module
+Generates detailed medication safety reports.
+Includes medication risks, interactions, and AI recommendations.
+Supports PDF download.
+
+Dashboard Module
+Displays patient statistics.
+Medication risk summaries.
+AI analysis history.
+Recent reports and alerts
+
+
+Challenges Faced and Solutions
+
+OCR Accuracy
+Problem: Medical prescriptions often contain handwritten or low-quality text, making extraction difficult.
+Solution: OCR preprocessing techniques and high-quality OCR models were used to improve text extraction accuracy.
+
+ AI Response Accuracy
+Problem: AI models may generate incomplete or less relevant recommendations.
+Solution: Prompt Engineering and Retrieval-Augmented Generation (RAG) techniques were
+implemented to improve response quality and provide context-aware recommendations.
+
+Medical Data Security
+Problem: Patient information must remain confidential and secure.
+Solution: Secure authentication, encrypted storage, and role-based access control were implemented to protect sensitive healthcare data.
+
+AI Integration
+Problem: Integrating multiple AI services while maintaining fast response time.
+Solution: Efficient API management, optimized prompts, and backend processing were implemented to ensure reliable AI performance.
+
+System Scalability
+Problem: Supporting multiple users simultaneously without affecting performance. 
+Solution: Cloud-based deployment, optimized database design, and scalable backend architecture were implemented to improve system performance and reliability.
+
+
+
+CHAPTER 5
+INTERN PROCESS
+
+Week 1: Artificial Intelligence Fundamentals
+Date – 02.06.2026 – Company Induction and Internship Orientation 
+Task:
+Attended the company induction program and became familiar with Brain O Vision Solutions India Pvt. Ltd., its organizational structure, internship objectives, and training methodology.
+Understood the internship schedule, project workflow, evaluation process,
+and expected learning outcomes.
+Output:
+	Successfully understood the company environment, internship objectives, and overall project development process, which provided a strong foundation for the upcoming technical sessions.
+
+Date – 03.06.2026 – Introduction to Artificial Intelligence 
+Task:
+Learned the fundamentals of Artificial Intelligence, Machine Learning, and Deep Learning.
+Understood the applications of AI in healthcare, education, finance, and automation.
+Output:
+	Developed a strong understanding of Artificial Intelligence concepts and their practical applications, forming the foundation for developing AI-powered applications.
+
+Date – 04.06.2026 – Entrepreneurship and Startup Development Session
+Task:
+Attended an interactive session conducted by the CEO and Founder of Brain O Vision Solutions India Pvt. Ltd. 
+Learned the basics of entrepreneurship and startup development. 
+Understood how to identify real-world problems and develop innovative business ideas. 
+Gained knowledge about the startup process, including idea development, market research, product development, funding, marketing, and business growth. 
+Learned about leadership, teamwork, problem-solving, and the importance of innovation in building a successful startup. 
+Output:
+The session helped me understand the fundamentals of entrepreneurship and startup development. It motivated me to think creatively, solve real-world problems, and develop AI-based solutions. The session also improved my understanding of business planning, leadership, and the process of building successful technology startups.
+
+Date – 05.06.2026 – Perceptron Model 
+Task:
+Learned the Perceptron algorithm, weighted sum, bias, and binary classification.
+Understood how simple neural networks classify input data.
+Output:
+	Acquired knowledge of the Perceptron model and its role as the fundamental building block of deep learning algorithms.
+
+Date – 08.06.2026 – Activation Functions 
+Task:
+Studied activation functions including Sigmoid, Tanh, ReLU, and Leaky ReLU.
+Compared their advantages, disadvantages, and practical applications.
+Output:
+	Successfully understood how activation functions introduce non-linearity into neural
+networks and improve learning performance.
+
+
+
+Week 2: Deep Learning and Prompt Engineering
+Date – 09.06.2026 – Feed Forward Neural Networks 
+Task:
+Learned the architecture of Feed Forward Neural Networks.
+Studied input, hidden, and output layers.
+Output:
+	Understood the complete workflow of Feed Forward Neural Networks and their role in prediction models.
+
+Date – 10.06.2026 – Back Propagation
+Task:
+Studied forward propagation, loss calculation, gradient descent, and weight optimization.
+Understood how neural networks improve prediction accuracy.
+Output:
+	Successfully learned the Back Propagation algorithm used for training deep learning models.
+
+Date – 11.06.2026 – Transformer Architecture
+ Task:
+Learned Transformer Architecture and Self-Attention mechanisms.
+Understood how modern Large Language Models are built.
+
+Output:
+	Developed a clear understanding of Transformer models and their significance in Natural Language Processing.
+
+
+
+
+Date – 12.06.2026 – Word Embeddings 
+Task:
+Explored Word Embeddings and vector representations.
+Learned semantic relationships between words using embedding techniques.
+Output:
+	Successfully understood how AI models convert text into numerical vectors for intelligent language understanding.
+
+Date – 15.06.2026 – Natural Language Processing 
+Task:
+Studied	text	preprocessing, tokenization, stop-word removal, stemming, and lemmatization.
+Learned data preparation techniques for NLP applications.
+Output:
+	Gained practical knowledge of Natural Lang2u0age Processing techniques required for AI chatbot development.
+
+Week 3: Prompt Engineering and RAG
+Date – 16.06.2026 – Tokenization Techniques 
+Task:
+Studied text normalization, tokenization, and sub-word tokenization using Byte Pair Encoding (BPE).
+Understood efficient text processing methods.
+Output:
+	Successfully learned tokenization techniques that improve language model performance.
+
+
+
+
+
+Date – 17.06.2026 – Prompt Engineering 
+Task:
+Learned Prompt Engineering fundamentals.
+Understood System Prompt, User Prompt, and Assistant Prompt concepts.
+Output:
+	Developed the ability to design structured prompts for obtaining accurate AI responses.
+
+Date – 18.06.2026 – Prompting Techniques 
+Task:
+Studied Zero-Shot, One-Shot, Few-Shot, and Chain-of-Thought prompting.
+Compared different prompting strategies.
+Output:
+	Successfully understood advanced prompting techniques for improving AI response quality.
+
+Date – 19.06.2026 – Prompt Optimization 
+Task:
+Learned prompt optimization, context limits, token economics, and dynamic context management.
+Understood methods for improving AI efficiency.
+Output:
+	Successfully optimized prompt design for better AI performance and reduced token usage.
+
+Date – 22.06.2026 – Context Engineering 
+Task:
+Studied Context Engineering and context window management.
+Learned effective prompt design strategies.
+
+
+Output:
+	Developed an understanding of context management techniques used in modern AI applications.
+
+Week 4: Retrieval-Augmented Generation and Final Project
+Date – 23.06.2026 – Chunking Techniques 
+Task:
+Studied Fixed-size, Sentence-based, Recursive, Paragraph, and Semantic Chunking.
+Understood document segmentation techniques for RAG systems.
+Output:
+	Successfully learned efficient document chunking methods for AI knowledge retrieval.
+
+Date – 24.06.2026 – Retrieval-Augmented Generation (RAG)
+Task:
+Learned the fundamentals of Retrieval-Augmented Generation.
+Understood the advantages of RAG over traditional fine-tuning approaches.
+Output:
+	Developed a clear understanding of RAG architecture and its applications in AI systems.
+
+Date – 25.06.2026 – RAG Pipeline
+Task:
+Studied document loading, preprocessing, chunking, embedding generation, and vector database storage.
+Learned complete RAG workflow implementation.
+Output:
+	Successfully understood the complete Retrieval-Augmented Generation pipeline used in AI applications.
+
+Date – 29.06.2026 – RAG Evaluation
+Task:
+Studied evaluation metrics including BLEU, ROUGE-1, ROUGE-2, ROUGE-L, and BERT Score.
+Learned methods to evaluate AI-generated responses.
+Output:
+	Successfully understood AI evaluation techniques used to measure response quality and retrieval performance. 
+
+Date – 30.06.2026 – Final Project Development and Demonstration 
+Task:
+Developed the MediSafe AI – Intelligent Medication Safety Assistant by integrating Artificial Intelligence, OCR, Prompt	Engineering,	and Retrieval-Augmented Generation (RAG).
+Demonstrated the completed application, explained its architecture, workflow, key features, and AI modules to the mentors.
+Output:
+	Successfully completed the MediSafe AI project with AI-powered medication safety analysis, OCR-based medical report processing, drug interaction detection, allergy conflict identification, medication risk assessment, and intelligent clinical recommendation generation. The project was successfully demonstrated and appreciated for its practical healthcare application.
+
+
+
+
+
+
+
+CHAPTER 6
+PROJECT SCREENSHOTS
+6.1 HOME PAGE
+Fig. 6.1 – Home Page
+6.2 USER AUTHENTICATION PAGES
+Fig. 6.2.1 – User Registration Page
+
+Fig. 6.2.2 – User Login Page
+
+6.3 DASHBOARD
+
+Fig. 6.3 – Dashboard Page
+
+
+
+6.4 PATIENTS DETAILS
+Fig. 6.4 – Patients List of details Page
+
+6.5 SAFETY ANALYSIS 
+Fig. 6.5.1 – Safety Analysis Page
+Fig. 6.5.2 – Safety Analysis Report
+
+6.6 QUICK CHECK
+Fig. 6.6 – Quick Check
+
+6.7 MEDICAL REPORT ANALYSIS
+
+Fig. 6.7.1 – Medical Report Page
+
+
+Fig. 6.7.2 – Medical Report analysis
+
+
+Fig. 6.7.3 – Generated Medical Report -Sample Report
+
+6.8 PRESCRIPTION SCANNER
+
+Fig. 6.8.1 – Prescription Scanner – Initial Page Before scanning
+
+
+Fig. 6.8.2 – Prescription Scanner – Scan Results (After Scanning)
+
+6.9 CLINICAL ASSISTANT
+
+
+Fig 6.9 - Clinical Assistant Page
+6.10 HISTORY AND AUDIT LOG
+
+Fig. 6.10.1 - History Page
+
+
+Fig. 6.10.2 - Audit Log Page
+
+
+
+6.11 SETTINGS
+
+
+Fig. 6.11 – Settings Page
+	
+CHAPTER 7
+CONCLUSION
+
+		The internship at Brain O Vision Solutions India Pvt. Ltd. was a great learning experience for me. During the four-week internship, I learned many important concepts related to Artificial Intelligence, Machine Learning, Prompt Engineering, Context Engineering, Retrieval-Augmented Generation (RAG), and Large Language Models (LLMs). The internship helped me understand how these technologies are used to develop real-world AI applications.
+		As part of the internship, I developed MediSafe AI – Intelligent Medication Safety Assistant, an AI-based application that helps improve medication safety. The system analyzes patient prescriptions, medical reports, allergies, and medication history to detect drug interactions, duplicate therapies, allergy conflicts, and dosage-related issues. It also provides AI-based recommendations to help healthcare professionals make safer medication decisions. 
+		During the project development, I improved my knowledge of Python, FastAPI, React.js, PostgreSQL, Supabase, OCR, API integration, and AI technologies. I also improved my problem-solving skills, teamwork, communication skills, and confidence in developing software applications.
+		Overall, this internship helped me connect my academic knowledge with practical industry experience. It improved my technical skills and motivated me to continue learning advanced AI technologies. I sincerely thank Brain O Vision Solutions India Pvt. Ltd. For providing me with this valuable opportunity and Anna University Regional Campus Coimbatore for encouraging students to participate in industrial internships. I am confident that the knowledge and experience gained during this internship will be very useful for my future career in Artificial Intelligence and software development.
+
+
+
+
+
+
+CHAPTER 8 
+REFERENCES
+
+REFERENCE WEBSITES
+Python Documentation – Official documentation for Python programming language.
+React Documentation – Official documentation for React.js.
+FastAPI Documentation – Official guide for FastAPI web framework.
+Supabase Documentation – Official documentation for database, authentication, and storage.
+PostgreSQL Documentation – Official guide for PostgreSQL database management.
+OpenAI Documentation – Official documentation for OpenAI API integration.
+Google Gemini Documentation – Official guide for Gemini API and AI models.
+LangChain Documentation – Official documentation for building AI applications using RAG.
+REFERENCE RESEARCH PAPERS
+Bates, D. W., et al. (1995). Incidence of Adverse Drug Events and Potential Adverse Drug Events. Journal of the American Medical Association (JAMA).
+Kohn, L. T., Corrigan, J. M., & Donaldson, M. S. (2000). To Err Is Human: Building a Safer Health System.
+Kaushal, R., Shojania, K. G., & Bates, D. W. (2003). Effects of Computerized Physician Order Entry and Clinical Decision Support Systems on Medication Safety.
+Vaswani, A., et al. (2017). Attention Is All You Need. Advances in Neural Information Processing Systems (NeurIPS).
+Lewis, P., et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS.
+
+
+
+
+
+
+
+
+
+
+
+
+
