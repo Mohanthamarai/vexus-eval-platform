@@ -1,5 +1,13 @@
-# VEXUS 2.5 — Secure, Role-Based AI Tutoring Evaluation Platform
+# VEXUS 2.6 — Secure, Role-Based AI Tutoring Evaluation Platform
 ### Real-Time Monitoring of Answer Quality, Hallucination Risk, Student Dependency & Learning Outcomes
+
+[![Deploy with Vercel](https://img.shields.io/badge/Live%20Demo-vexus--eval--platform.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vexus-eval-platform.vercel.app)
+[![API Status](https://img.shields.io/badge/System%20Status-100%25%20Operational-10b981?style=for-the-badge&logo=fastapi&logoColor=white)](https://vexus-eval-platform.vercel.app/api/health)
+[![Platforms](https://img.shields.io/badge/Platforms-Desktop%20%7C%20Mobile%20App-3b82f6?style=for-the-badge)](https://vexus-eval-platform.vercel.app)
+
+> 🌐 **Live Web & Mobile App:** [https://vexus-eval-platform.vercel.app](https://vexus-eval-platform.vercel.app)  
+> 🔑 **Admin Portal:** Username: `admin` | Password: `AdminSecureVexus2026!`  
+> 🎓 **Student Portal:** Username: `alicesmith` | Password: `Alicesmith2026!`  
 
 VEXUS (EvalTutor) is an enterprise-grade AI tutoring evaluation platform designed to assess, audit, and safeguard AI pedagogical assistants across five core dimensions:
 1. **Answer Quality (Pedagogical Efficacy)**
