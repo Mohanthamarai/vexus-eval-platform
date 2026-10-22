@@ -109,6 +109,25 @@ const app = {
       });
     }
 
+    // Mobile menu toggle & backdrop
+    const mobileToggleBtn = document.getElementById('mobile-toggle-btn');
+    const sidebarEl = document.getElementById('sidebar');
+    const backdropEl = document.getElementById('sidebar-backdrop');
+
+    if (mobileToggleBtn && sidebarEl) {
+      mobileToggleBtn.addEventListener('click', () => {
+        sidebarEl.classList.toggle('open');
+        if (backdropEl) backdropEl.classList.toggle('active');
+      });
+    }
+
+    if (backdropEl && sidebarEl) {
+      backdropEl.addEventListener('click', () => {
+        sidebarEl.classList.remove('open');
+        backdropEl.classList.remove('active');
+      });
+    }
+
     // Verify authentication and render
     await this.verifyAuthAndSetup();
   },
@@ -353,6 +372,12 @@ const app = {
     }
 
     this.currentPage = pageName;
+    
+    // Auto-close mobile drawer on navigation
+    const sidebarEl = document.getElementById('sidebar');
+    const backdropEl = document.getElementById('sidebar-backdrop');
+    if (sidebarEl) sidebarEl.classList.remove('open');
+    if (backdropEl) backdropEl.classList.remove('active');
 
     // Update active nav class
     document.querySelectorAll('.nav-item').forEach(item => {

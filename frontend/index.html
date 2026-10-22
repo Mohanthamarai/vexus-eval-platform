@@ -128,10 +128,21 @@
       </div>
     </aside>
 
+    <!-- Mobile Backdrop for drawer navigation -->
+    <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
     <!-- ═══════════ MAIN CONTENT ═══════════ -->
     <main class="main-content" id="main-content">
       <header class="top-bar" id="top-bar">
-        <div style="display: flex; align-items: center; gap: 16px;">
+        <div class="top-bar-left">
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Toggle navigation menu" title="Open Menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
           <h1 class="page-title" id="page-title">Executive Dashboard</h1>
         </div>
 

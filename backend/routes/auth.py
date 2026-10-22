@@ -14,6 +14,7 @@ from security import (
     verify_password,
     hash_password,
     generate_session_token,
+    create_access_token,
     check_rate_limit,
     record_failed_attempt,
     clear_failed_attempts,
@@ -72,8 +73,8 @@ def login(
     # Success: clear failed rate limiting attempts
     clear_failed_attempts(rate_key)
 
-    # Create server-side session token
-    token = generate_session_token()
+    # Create signed session token (works seamlessly across serverless instances)
+    token = create_access_token(user.id, user.username, user.role, SESSION_EXPIRE_HOURS)
     expires_at = datetime.utcnow() + timedelta(hours=SESSION_EXPIRE_HOURS)
 
     user_agent = request.headers.get("user-agent", "")[:250]

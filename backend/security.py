@@ -7,7 +7,12 @@ and in-memory rate limiting for authentication endpoints.
 import time
 import secrets
 import bcrypt
-from typing import Dict, Tuple
+import hmac
+import hashlib
+import base64
+import json
+from typing import Dict, Tuple, Optional
+from config import SECRET_KEY
 
 # In-memory rate limiting store: key -> list of timestamp floats
 _LOGIN_ATTEMPTS: Dict[str, list] = {}
@@ -37,8 +42,52 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
         return False
 
 
+def create_access_token(user_id: int, username: str, role: str, expires_hours: int = 24) -> str:
+    """
+    Generate a tamper-proof HMAC-SHA256 signed stateless session token.
+    Ensures seamless authentication across ephemeral serverless containers.
+    """
+    exp = int(time.time() + (expires_hours * 3600))
+    payload = {
+        "uid": user_id,
+        "sub": username,
+        "rol": role,
+        "exp": exp,
+        "nonce": secrets.token_hex(8)
+    }
+    raw_payload = json.dumps(payload, separators=(',', ':')).encode('utf-8')
+    b64_payload = base64.urlsafe_b64encode(raw_payload).decode('utf-8').rstrip('=')
+    sig = hmac.new(SECRET_KEY.encode('utf-8'), b64_payload.encode('utf-8'), hashlib.sha256).hexdigest()
+    return f"vx1_{b64_payload}.{sig}"
+
+
+def decode_access_token(token: str) -> Optional[dict]:
+    """
+    Verify and decode an HMAC-SHA256 signed token.
+    Returns payload dictionary if valid and not expired, else None.
+    """
+    if not token or not token.startswith("vx1_") or "." not in token:
+        return None
+    try:
+        parts = token[4:].split(".", 1)
+        if len(parts) != 2:
+            return None
+        b64_payload, signature = parts
+        expected_sig = hmac.new(SECRET_KEY.encode('utf-8'), b64_payload.encode('utf-8'), hashlib.sha256).hexdigest()
+        if not hmac.compare_digest(signature, expected_sig):
+            return None
+        padding = '=' * (-len(b64_payload) % 4)
+        raw_payload = base64.urlsafe_b64decode((b64_payload + padding).encode('utf-8'))
+        payload = json.loads(raw_payload.decode('utf-8'))
+        if payload.get("exp", 0) < time.time():
+            return None
+        return payload
+    except Exception:
+        return None
+
+
 def generate_session_token() -> str:
-    """Generate a high-entropy 256-bit URL-safe session token."""
+    """Generate a high-entropy 256-bit URL-safe session token (legacy)."""
     return secrets.token_urlsafe(48)
 
 
